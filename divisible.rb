@@ -1,13 +1,15 @@
-#(1) Write a method that returns in an array all the numbers between 1 and 100 that are divisible by 2 or 3 or 5.
- #Then call the method in your program and print out what it returns.  Call the program divisible.rb.
-
- def divisible
+def divisible
+    #set x to 1 because we don't want zero included
     x = 1
+    #set empty array to store divisible numbers
     divisible_numbers = []
+# while x is 100 or less check each number to see if it's divisible
 while x <= 100
     if x % 2 == 0 || x % 3 == 0 || x % 5 == 0
+        #add the current number to the array if it's divisiable
         divisible_numbers.push(x)        
     end
+    #increment x each time so we eventually exit the loop
     x += 1
 end
 return divisible_numbers
