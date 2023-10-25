@@ -13,7 +13,7 @@ phrase.each do |letter|
     end
 end
   #return array with included letters to access it outside of the method
-return included_letter
+return included_letter.join("")
 end
 
  
